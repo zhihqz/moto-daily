@@ -158,9 +158,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-      - run: python -c "import os; print('token len:', len(os.environ['PUSHPLUS_TOKEN']))"
 
-      - run: python main.py
-        env:
-          PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
-          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
